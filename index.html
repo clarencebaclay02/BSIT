@@ -10,6 +10,18 @@
         <center>
             <input type="text" name="Firstname" id="firstname" placeholder="Firstname">
             <input type="text" name="Lastname" id="lastname" placeholder="Lastname">
+            <br><br>
+            <input type="button" name="Submit" id="submit" placeholder="Submit">
         </center>
+
+        <h1 id="myfirtsname"></h1>
+        <h1 id="mylastname"></h1>
 </body>
+
+<script>
+    document.getElementById('submit').addEventListener('click', () =>{
+        document.getElementById('myfirstname').innerText = document.getElementById('firstname').value
+        document.getElementById('mylastname').innerText = document.getElementById('lastname').value
+    })
+</script>
 </html>
